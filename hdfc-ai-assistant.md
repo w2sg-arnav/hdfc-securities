@@ -126,19 +126,19 @@
 
 ## 6. Implementation Roadmap
 
-### Phase 1 (0-3 months)
+### Phase 1
 - Set up basic infrastructure
 - Implement data pipelines
 - Deploy base LLM model
 - Configure security framework
 
-### Phase 2 (3-6 months)
+### Phase 2 
 - Deploy portfolio optimization system
 - Implement complaint resolution system
 - Set up regulatory update tracking
 - Integration with internal systems
 
-### Phase 3 (6-9 months)
+### Phase 3 
 - Enhanced LLM fine-tuning
 - Advanced portfolio analytics
 - Automated regulatory reporting
