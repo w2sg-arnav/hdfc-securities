@@ -1,0 +1,138 @@
+7. **Key Performance Indicators (KPIs) and Accounting Ratios**
+
+Our Company uses Key Performance Indicators (KPIs) to understand and analyze its business performance, which in result, help us in analyzing the growth of business in comparison to our peers. Our Company considers that the KPIs set forth below are the ones that may have a bearing for arriving at the basis for the Offer Price. The KPIs disclosed below have been approved and confirmed by a resolution of our Audit Committee dated December 30, 2024. 
+
+We have confirmed that there are no KPIs pertaining to our Company that have been certified by Niranjan & Narayanan, Chartered Accountants, pursuant to a certificate dated December 30, 2024.
+
+We have described and defined the KPIs, as applicable, in "Definitions and Abbreviations - Financial and operational details of our other operating metrics disclosed elsewhere on the Red Herring Prospectus, please refer to the section titled ‘Our Business’, and ‘Management’s Discussion and Analysis of Financial Condition and Results of Operations’" on pages 276 and 441 of the RHP, respectively and for Our Company) for a period of one year after the date of listing of the Equity Shares on a Stock Exchange, at least on such a quarterly/any lesser period as required under the SEBI ICDR Regulations.
+
+The list of our KPIs along with brief explanation of the relevance of the KPI for our business operations are set forth below:
+
+
+Sr. No. | KPI | Explanation
+---|---|---|
+1 | Revenue from operations | Revenue from Operations is used by the management to track the overall financial performance of the business and in turn helps assess the overall financial health of the company.
+2 | Growth in revenue from operations (%) | Growth in revenue from operations provides information regarding the growth of the business for the respective period.
+3 | EBITDA | EBITDA provides an indicator of the operational profitability of the business in comparison to the total income.
+4 | EBITDA Margin | EBITDA margin is information regarding the operational profitability of the business.
+5 | Profit for the Year / Period | Profit after tax provides information regarding the overall profitability of the Company and allows comparison of results over multiple periods.
+6 | PAT Margin | Tracking PAT margin assists in tracking the margin profile of the business
+7 | ROE | Return on Equity provides how efficiently the Company generates profits from shareholders' funds.
+8 | ROCE | Return on Capital Employed provides how efficiently the Company generates earnings from the capital employed in the business
+9 | ROA | Represents the ratio of return on average assets which is profit after tax (PAT) to average loan assets for the relevant fiscal year. It is used to assess the return on the total assets of the company.
+10 | Debt to Equity Ratio | Debt to equity ratio is a metric that measures the degree to which the Company is financing its operation with debt compared to its own equity.
+11 | Net Debt to Equity Ratio | Debt to equity ratio is a metric that measures the degree to which the Company is financing its operation with debt compared to its own equity.
+12 | Fixed Asset Turnover | This formula helps the Company assess how efficiently the Company generates earnings from fixed assets over multiple periods.
+13 | Adjusted ROCE | Adjusted Return on Capital Employed provides how efficiently the Company generates earnings from the capital employed in the business excluding cash and cash equivalents and Fixed Deposits excluding Margin Money.
+
+
+Details of KPIs as at/for the six months period ended on September 30, 2024 and financial years ended March 31, 2024, March 31, 2023 and March 31, 2022
+
+
+BASIS FOR OFFER PRICE
+
+Particulars | Six months periods ended September 30, 2024 | FY 2024 | FY 2023 | FY 2022
+---|---|---|---|---|
+Revenue from Operations | 47,960.00 | 93,436.69 | 107,975.88 | 2,401.87
+YoY Growth Rate (%) | - | 9.26% | 107.17% | -
+2Y CAGR (%) | - | - | - | -
+EBITDA | 5,629.80 | 9,082.19 | 17,655.56 | 417.79
+EBITDA Margin (%) | 11.74% | 18.36% | 882.56 | 17.30%
+YoY Growth Rate (%) | - | 6.22% | 86.25% | -
+PAT | 3,074.40 | 600.11 | 534.24 | 251.45
+PAT Margin (%) | 6.41% | 12.33% | 112.46% | 10.41%
+YoY Growth Rate (%) | - | 2.91% | 20.74% | -
+ROE (%) | 9.91% | 25.49% | 47.34% | 54.89%
+ROA (%) | 2.91% | 10.92% | 43.56% | 42.03%
+ROCE (%) | 9.61% | 20.74% | 47.66% | 42.88%
+Total Debt to Equity | 0.32 | 0.30 | 0.19 | 0.49
+Net Debt to Equity | 0.15 | 0.30 | 0.19 | 0.49
+Fixed Asset Turnover | 1.97 | 2.79 | 6.08 | 6.26
+Adjusted ROCE | - | 13.09% | 29.41% | 42.51%
+
+
+Thermax Ltd | Praj Industries
+---|---|---|---|---|
+FY 2024 | FY 2023 | FY 2022 | Six months periods ended September 30, 2024 | FY 2024 | FY 2023 | FY 2022
+---|---|---|---|---|---|---|
+124,234.60 | 80,898.10 | 61,283.30 | 15,153.33 | 34,662.78 | 35,280.38 | 23,432.74
+23.25% | 32.01% | - | - | 21.75% | 50.56% | -
+23.34% | - | - | - | 1.62% | - | -
+10,298.90 | 7,577.40 | 5,483.80 | 2,036.84 | 4,313.05 | 3,536.18 | 2,299.74
+7.8% | 9.18% | 8.77% | 13.22% | 12.29% | 9.92% | 9.71%
+23.41% | 45.07% | 3,123.10 | 13.80% | 2,833.91 | 2,398.01 | 1,503.29
+6.73% | 5.46% | 4.99% | 8.96% | 8.07% | 6.73% | 6.35%
+42.71% | 44.31% | - | - | 18.17% | 59.62% | -
+15.85% | 19.53% | 19.26% | 26.90% | 35.10% | 36.80% | 28.23%
+6.77% | 12.24% | 9.47% | 19.34% | 10.28% | 9.96% | 7.88%
+0.24 | 5.5% | 4.15% | 87.5% | 24.09% | 24.06% | 17.50%
+0.23 | (0.21) | (0.11) | (0.13) | (0.03) | (0.10) | (0.15)
+0.07 | 0.08 | 0.17 | 0.00 | 0.13 | 0.04 | 0.02
+25.47% | 22.96% | 21.23% | 5.06 | 35.39% | 36.97% | 28.49%
+45.34 | 5.54 | 4.68 | - | 8.37 | 12.07% | 8.60
+
+
+9. Weighted Average Cost of Acquisition ("WACA"), floor price and cap price
+
+
+(a) Price per share of the Company based on primary issuance of Equity Shares or convertible securities (excluding Equity Shares issued pursuant to a bonus issue) during the 18 months preceding the date of the RHP, where such share/issue is equal to or more than 5% of the fully diluted paid up share capital of the Company in a single transaction or multiple transactions combined together over a span of 30 days
+
+Name of the Shareholder | Date of Acquisition | No. of Equity Shares (Adjusted for Bonus Issue) | Price per Equity Share(*) (₹) | Total Cost(₹) | Consideration | Type
+---|---|---|---|---|---|
+GL Glassco INC. | November 16, 2022 | 69,85,000 | 80.20 | 558,673,200.00 | Cash | Allotment
+Asahi Glassplant Ltd | November 22, 2022 | 34,60,000 | 80.20 | 279,336,800.00 | Cash | Allotment
+Monoform Management Support Co., Ltd. | December 22, 2022 | 1,04,49,000 | 80.20 | 838,009,800.00 | Cash | Allotment
+**Total** |  | **2,08,96,000** |  | **1,676,019,800.00** |  | 
+**80.20**
+*Price Per Equity Shares adjusted for Bonus Issue. 
+**WACA**: Weighted average cost of acquisition. WACA is the price weighted average cost incurred for acquiring the securities of the Company as of date divided by the total cost incurred for acquiring the securities of the Company as of date divided by the total number of securities acquired less the amount received pursuant to resolution dated June 3, 2024 approved the issuance of 163,471,068 equity shares by way of bonus issuance in the ratio of nine Equity Shares for every one Equity Share held by our Shareholders in accordance with Ind AS 33- Earning Per Share notified under the Companies (Indian Accounting Standards) Rules, 2015 (as amended). 
+
+
+(b) Price per share of Company based on secondary sale or acquisition of Equity Securities or convertible securities (excluding Equity Shares issued pursuant to a bonus issue) by the Promoters, members of the Promoter Group, the Investor Selling Shareholders or other shareholders with rights to nominate director(s) on our Board or shareholders having the right to nominate director(s) in our Board are a party to the transaction or sale is equal to or more than 5% of the fully diluted paid up share capital of the Company, during the 18 months preceding the date of the RHP, where either acquisition or sale equal to or more than 5% of the fully diluted paid up share capital of the Company in a single transaction or multiple transactions combined together over a span of 30 days.
+
+Not Applicable. There are no secondary sale or acquisition of Equity Securities or convertible securities, where any of the Promoters, members of the Promoter Group, the Selling Shareholders or Shareholders having the right to nominate Director(s) in our Board are a party to the transaction or sale is equal to or more than 5% of the fully diluted paid up share capital of the Company in a single transaction or multiple transactions combined together over a span of 30 days.
+
+"Primary transactions" refers to a primary issue of Equity Shares or securities convertible into Equity Shares ("Equity Securities", if any). "Secondary transactions" refers to any secondary sale or acquisition of Equity Securities, if any.
+
+
+**The Floor Price is 1.66 times and the Cap Price is 1.75 times the weighted average cost of acquisition at which the Equity Shares were issued by our Company, or acquired or sold by our Promoters, members of the Promoter Group or Selling Shareholders or shareholders having the right to nominate director(s) on our Board in the past 18 months or three years preceding the date of the Red Herring Prospectus are disclosed below:**
+
+
+ | Weighted average cost of acquisition (in ₹) | Floor Price (in ₹) | Cap Price (in ₹)
+---|---|---|
+ | 80.20* | 1.66 times | 1.75 times
+
+
+**Past Transactions**
+
+Weighted average cost of acquisition for last 18 months for shares (equity/convertible securities) issued under an employee stock option plan/employee stock option scheme and issued primary / bonus issue, during the 18 months preceding the date of filing of the RHP where such transaction's or multiple transaction's combined together but not vested, in a single transaction and excluding employee stock options granted over a span of 30 days
+
+Not Applicable
+
+
+Weighted average cost of acquisition for last 18 months for shares (equity/convertible securities), where either the Company or any Promoters, members of the Promoter group entities or Selling Shareholders or shareholders having the right to nominate director(s) in our Board are a party to the transaction involving the right to acquire shares of the Company (calculated based on the pre-issue fully diluted paid-up share capital of the Company or the date of filing of the RHP, where such transaction's or multiple transactions combined together but not vested), in such a single transaction and excluding employee stock options granted over a span of 30 days
+
+Not Applicable
+
+
+If there were no primary or secondary transactions of equity shares of either Company involving primary / bonus issue, employee stock option plan/employee stock option scheme, private placement, qualified institutional placement or acquisition / sale of the Company during the 18 months preceding the date of filing of the RHP, where either the Company (calculated based on the pre-issue fully diluted paid-up share capital of the Company or more than five per cent of diluted before such transaction’s and excluding employee stock options granted over a span of 30 days, if any, or any of the Promoters, members of the Promoter group entities or last five Selling Shareholders or shareholders having the right to nominate director(s) on our Board are a party to the transaction or sale is equal to or more than five per cent of the fully diluted paid-up share capital of the Company during the 18 months preceding the date of filing of the RHP, but not vested, the information has been disclosed prior to filing of RHP.
+
+Not Applicable
+
+
+8. Comparison of KPIs of our Company and listed peers
+
+While the KPIs of listed peers (GMM Pfaudler Ltd., HLE Glascoat Ltd., Thermax Ltd and Praj Industries) may have influenced the pricing of the Offer Price, these Companies (Indian Accounting Standards) Rules, 2015 (as amended).
+
+(A) Comparison for the six months ended September 30, 2024 and for fiscals 2024, 2023 and 2022:
+
+Different terms of listed peers (GMM Pfaudler Ltd., HLE Glascoat Ltd., Thermax Ltd and Praj Industries) may differ in terms of differing scale, business models, product verticals serviced or focus area or geographical presence.
+
+GMM Pfaudler Ltd
+Particulars | Six months periods ended September 30, 2024 | FY 2024 | FY 2023 | FY 2022 | Six months periods ended September 30, 2024 | FY 2024 | FY 2023 | FY 2022
+---|---|---|---|---|---|---|---|
+Revenue from Operations | 3,071.95 | 5,436.69 | 4,975.88 | 2,401.87 | 15,906.20 | 34,464.80 | 31,775.50 | 25,438.29
+YoY Growth Rate (%) | - | 9.26% | 107.17% | - | - | 8.46% | 25.07% | -
+2Y CAGR (%) | - | - | - | - | - | 16.47% | - | -
+EBITDA | 627.08 | 1,009.19 | 882.56 | 417.79 | 1,913.30 | 4,968.20 | 4,810.10 | 2,948.69
+EBITDA Margin (%) | 20.09% | 18.36% | 17.65% | 17.30% | 11.96% | 14.33% | 14.90% | 11.5
