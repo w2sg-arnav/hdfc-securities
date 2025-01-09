@@ -1,0 +1,16 @@
+Extract all text content and tabular data from this image, strictly preserving the original reading order as they appear on the page.
+
+1. **Reading Order:** Process the content strictly based on the reading order within the image. Do not rearrange or reorder blocks or tables.
+
+2. **Text Blocks:** Extract distinct blocks of text and represent each block as a separate entity, separated by double newlines ("\\n\\n").
+
+3. **Tables:** Identify any tables present in the image. For each table, output it in a structured, comma-separated format (.csv). Each row of the table should be on a new line, with commas separating column values.
+    - Include the header row, if present.
+    - Ensure that all columns of each row are comma separated values.
+
+4. **Output Format:**
+    - Output text blocks and tables in the order they are read on the page. When a table is encountered while reading the page, output it in CSV format at that point in the output.
+
+5. If there are no text or no tables return empty string.
+
+    If the table contains only one row, then return text of that row separated by comma.
