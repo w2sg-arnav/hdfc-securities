@@ -2,7 +2,7 @@ import fitz
 import json
 from pathlib import Path
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from pinecone import Pinecone, ServerlessSpec
 from together import Together
 import PIL.Image
@@ -100,7 +100,7 @@ def extract_text_from_pdf(pdf_path: Path) -> dict:
         print(f"Error during Gemini Vision API processing: {e}")
         return {}
 
-def semantic_chunking(text_dict: dict, chunk_size: int = 500, chunk_overlap: int = 50):
+def semantic_chunking(text_dict: dict, chunk_size: int = 1000, chunk_overlap: int = 100):
     """
     Chunks the extracted text semantically.
 
@@ -195,7 +195,7 @@ class RAGChatbot:
         try:
             self.pc.create_index(
                 name=self.pinecone_index_name,
-                dimension=384,  # Dimension of all-mpnet-base-v2 embeddings
+                dimension=768,  # Dimension of all-mpnet-base-v2 embeddings
                 metric="cosine",
                 spec=ServerlessSpec(
                     cloud="aws",
@@ -227,21 +227,10 @@ class RAGChatbot:
     
 
 pdf_files = [
-    Path('../RHP_Documents/Abha Power and Steel_RHP.pdf'),
-    Path('../RHP_Documents/Aditya Ultra Steel_RHP.pdf'),
-    Path('../RHP_Documents/Aeron Composite_RHP.pdf'),
-    Path('../RHP_Documents/Apex Ecotech_RHP.pdf'),
-    Path('../RHP_Documents/Arkade Developers_RHP.pdf'),
-    Path('../RHP_Documents/Baazar Style Retail_RHP.pdf'),
-    Path('../RHP_Documents/Blackbuck_RHP.pdf'),
-    Path('../RHP_Documents/Boss Packaging Solutions_RHP.pdf'),
-    Path('../RHP_Documents/C2C Advanced Systems_RHP.pdf'),
-    Path('../RHP_Documents/Concord Enviro Systems Limited_RHP.pdf'),
-    Path('../RHP_Documents/DAM Capital Advisors Limited_RHP.pdf'),
-    Path('../RHP_Documents/Danish Power_RHP.pdf'),
-    Path('../RHP_Documents/Deccan Transcon Leasing_RHP.pdf'),
-    Path('../RHP_Documents/Dhanlaxmi Crop Science_RHP.pdf'),
-    Path('../RHP_Documents/Diffusion Engineers Ltd_RHP.pdf'),
+    Path('Concord Enviro Systems Limited_RHP.pdf'),
+    Path('DAM Capital Advisors Limited_RHP.pdf'),
+    Path('Ventive Hospitality Limited_RHP.pdf'),
+    Path('NewMalayalam Steel Limited_RHP.pdf'),
 ]
 
 chatbot = RAGChatbot()
