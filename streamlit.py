@@ -55,13 +55,9 @@ def extract_text_from_pdf(pdf_path: Path) -> dict:
         if total_words >= 20:
             return page_text
         else:
-            print(
-                f"pypdf extracted less than 20 words ({total_words}). Falling back to Gemini Vision API."
-            )
+            print(f"pypdf extracted less than 20 words ({total_words}). Falling back to Gemini Vision API.")
     except Exception as e:
-        print(
-            f"An error occurred during PDF extraction with pypdf: {e}. Falling back to Gemini Vision API."
-        )
+        print(f"An error occurred during PDF extraction with pypdf: {e}. Falling back to Gemini Vision API.")
         # Fallback to Gemini Vision API
         try:
             genai.configure(api_key=GOOGLE_API_KEY)
@@ -80,22 +76,16 @@ def extract_text_from_pdf(pdf_path: Path) -> dict:
 
             for i, img in enumerate(images):
                 page_number = i + 1
-                output_file_path = os.path.join(
-                    output_dir, f"{pdf_name}_{page_number}.txt"
-                )
+                output_file_path = os.path.join(output_dir, f"{pdf_name}_{page_number}.txt")
 
                 try:
-                    response = model.generate_content(
-                        [prompt, img], generation_config={"max_output_tokens": 4096}
-                    )
+                    response = model.generate_content([prompt, img], generation_config={"max_output_tokens": 4096})
                     response.resolve()
                     gemini_page_text[page_number] = response.text
                     print(f"Gemini processed page {page_number}")
                 except Exception as page_err:
                     print(f"Error processing page {page_number} with Gemini: {page_err}")
-                    gemini_page_text[
-                        page_number
-                    ] = f"Error: An error occurred during Gemini processing of page {page_number}: {page_err}"
+                    gemini_page_text[page_number] = f"Error: An error occurred during Gemini processing of page {page_number}: {page_err}"
             return gemini_page_text
         except FileNotFoundError as e:
             print(f"Error: Could not find file: {e}")
@@ -132,9 +122,7 @@ def embed_and_upsert_to_pinecone(chunks: list[str], index):
     print(f"Upserted {len(chunks)} chunks to Pinecone.")
 
 
-def generate_response(
-    query: str, context: str, model_name: str = "meta-llama/Llama-3-8b-chat-hf"
-):
+def generate_response(query: str, context: str, model_name: str = "meta-llama/Llama-3-8b-chat-hf"):
     """Generates a response using Together AI's API."""
     if not TOGETHER_AI_API_KEY:
         raise ValueError("TOGETHER_AI_API_KEY environment variable not set.")
@@ -154,9 +142,7 @@ def query_pinecone(query: str, index, top_k: int = 15):
     """Queries Pinecone for relevant chunks."""
     embeddings = HuggingFaceEmbeddings(model_name="all-mpnet-base-v2")
     query_vector = embeddings.embed_query(query)
-    results = index.query(
-        vector=query_vector, top_k=top_k, include_values=False, include_metadata=True
-    )
+    results = index.query(vector=query_vector, top_k=top_k, include_values=False, include_metadata=True)
     context = "\n\n".join([match.metadata["text"] for match in results.matches])
     return context
 
@@ -178,8 +164,7 @@ class RAGChatbot:
             self.index = self.pc.Index(self.pinecone_index_name)
             print(f"Successfully created and connected to Pinecone index: '{self.pinecone_index_name}'")
         except Exception as create_e:
-           raise Exception(f"Error creating Pinecone index: '{self.pinecone_index_name}': {create_e}")
-
+            raise Exception(f"Error creating Pinecone index: '{self.pinecone_index_name}': {create_e}")
 
     def ingest_pdfs(self, pdf_paths: list[Path]):
         """Ingests a list of PDFs, chunks them, and uploads to Pinecone."""
@@ -193,12 +178,12 @@ class RAGChatbot:
                 print(f"No text extracted from the PDF: {pdf_path}")
 
     def query(self, query: str):
-       """Queries the chatbot with a user's question."""
-       context = query_pinecone(query, self.index)
-       if not context:
-           return "No relevant information found in the document."
-       response = generate_response(query, context)
-       return response
+        """Queries the chatbot with a user's question."""
+        context = query_pinecone(query, self.index)
+        if not context:
+            return "No relevant information found in the document."
+        response = generate_response(query, context)
+        return response
 
 
 # --- Streamlit App ---

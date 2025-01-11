@@ -1,0 +1,9 @@
+streamlit
+langchain
+pinecone-client
+together
+pillow
+pypdf
+pdf2image
+python-dotenv
+google-generativeai
