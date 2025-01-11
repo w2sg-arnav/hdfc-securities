@@ -1,5 +1,10 @@
 from flask import Flask, request, jsonify
-import random
+
+# chatbot = RAGCHATBOT()
+
+# def process_messaget():
+
+#     return final_message, accuracy
 
 app = Flask(__name__)
 
