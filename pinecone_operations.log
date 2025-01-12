@@ -1,0 +1,51 @@
+2025-01-12 07:56:16,737 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/pinecone_plugins'])
+2025-01-12 07:56:16,737 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-12 07:56:16,749 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2025-01-12 07:56:16,935 - __main__ - INFO - Creating new index: rag-chatbot-index-1
+2025-01-12 07:56:16,935 - __main__ - ERROR - Failed to create index rag-chatbot-index-1: ServerlessSpec.__new__() got an unexpected keyword argument 'pod_type'
+2025-01-12 07:56:16,935 - __main__ - ERROR - Error processing index 1: ServerlessSpec.__new__() got an unexpected keyword argument 'pod_type'
+2025-01-12 07:56:16,935 - __main__ - ERROR - Application failed: ServerlessSpec.__new__() got an unexpected keyword argument 'pod_type'
+2025-01-12 07:57:38,986 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/pinecone_plugins'])
+2025-01-12 07:57:38,986 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-12 07:57:38,991 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2025-01-12 07:57:39,082 - __main__ - INFO - Creating new index: rag-chatbot-index-1
+2025-01-12 07:57:44,411 - __main__ - INFO - Successfully created index: rag-chatbot-index-1
+2025-01-12 07:57:44,472 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/pinecone_plugins'])
+2025-01-12 07:57:44,472 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-12 07:57:44,537 - __main__ - INFO - Creating new index: rag-chatbot-index-2
+2025-01-12 07:57:49,842 - __main__ - INFO - Successfully created index: rag-chatbot-index-2
+2025-01-12 07:57:49,913 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/pinecone_plugins'])
+2025-01-12 07:57:49,913 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-12 07:57:49,967 - __main__ - INFO - Creating new index: rag-chatbot-index-3
+2025-01-12 07:57:55,320 - __main__ - INFO - Successfully created index: rag-chatbot-index-3
+2025-01-12 07:57:55,379 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/pinecone_plugins'])
+2025-01-12 07:57:55,379 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-12 07:57:55,445 - __main__ - INFO - Creating new index: rag-chatbot-index-4
+2025-01-12 07:58:00,805 - __main__ - INFO - Successfully created index: rag-chatbot-index-4
+2025-01-12 07:58:00,886 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/pinecone_plugins'])
+2025-01-12 07:58:00,887 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-12 07:58:00,971 - __main__ - INFO - Creating new index: rag-chatbot-index-5
+2025-01-12 07:58:06,288 - __main__ - INFO - Successfully created index: rag-chatbot-index-5
+2025-01-12 07:58:06,358 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['/home/zeus/miniconda3/envs/cloudspace/lib/python3.10/site-packages/pinecone_plugins'])
+2025-01-12 07:58:06,359 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-12 07:58:06,359 - __main__ - INFO - Successfully initialized all Pinecone indexes
+2025-01-12 07:58:06,409 - __main__ - INFO - Index 1 (rag-chatbot-index-1) stats: {'dimension': 768,
+ 'index_fullness': 0.0,
+ 'namespaces': {},
+ 'total_vector_count': 0}
+2025-01-12 07:58:06,460 - __main__ - INFO - Index 2 (rag-chatbot-index-2) stats: {'dimension': 768,
+ 'index_fullness': 0.0,
+ 'namespaces': {},
+ 'total_vector_count': 0}
+2025-01-12 07:58:06,510 - __main__ - INFO - Index 3 (rag-chatbot-index-3) stats: {'dimension': 768,
+ 'index_fullness': 0.0,
+ 'namespaces': {},
+ 'total_vector_count': 0}
+2025-01-12 07:58:06,558 - __main__ - INFO - Index 4 (rag-chatbot-index-4) stats: {'dimension': 768,
+ 'index_fullness': 0.0,
+ 'namespaces': {},
+ 'total_vector_count': 0}
+2025-01-12 07:58:06,605 - __main__ - INFO - Index 5 (rag-chatbot-index-5) stats: {'dimension': 768,
+ 'index_fullness': 0.0,
+ 'namespaces': {},
+ 'total_vector_count': 0}
