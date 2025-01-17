@@ -190,8 +190,7 @@ class RAGChatbot:
         if not PINECONE_API_KEY:
             raise ValueError("Pinecone API key must be set.")
         self.pc = Pinecone(api_key=PINECONE_API_KEY)
-        # self.pinecone_index_name = f"{PINECONE_BASE_INDEX_NAME}-{int(time.time())}"
-        self.pinecone_index_name = "index-2"
+        self.pinecone_index_name = f"{PINECONE_BASE_INDEX_NAME}-{int(time.time())}"
         print(f"Using Pinecone index '{self.pinecone_index_name}'...")
         try:
             # Check if the index exists before attempting to create it
