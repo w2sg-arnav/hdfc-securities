@@ -12,14 +12,13 @@ from pdf2image import convert_from_path
 import time
 
 # Ensure you have these environment variables set
-TOGETHER_AI_API_KEY = "64880c44ef37384040dc253c954ed2f190c0e4702c3e80745e5eb78221f47376"  
+TOGETHER_AI_API_KEY = "64880c44ef37384040dc253c954ed2f190c0e4702c3e80745e5eb78221f47376"
 PINECONE_API_KEY = "pcsk_2aEGcj_7cwy95qcT59b57wGLdNgNquJdiTiBJXNU27UiEob5cisrASpM99fcBHPeHwxp4U"
 PINECONE_ENVIRONMENT = "us-east-1"
-PINECONE_BASE_INDEX_NAME = "rag-chatbot-index"  
+PINECONE_BASE_INDEX_NAME = "rag-chatbot-index"
 GOOGLE_API_KEY = "AIzaSyBe7hdWbsCf6kQmyoMAUXbOlr7p8v1Tjhk"
 
-
-model_kwargs = {'device': 'cuda:0'}
+model_kwargs = {'device': 'cpu'}
 model_name = "sentence-transformers/all-mpnet-base-v2"
 
 def load_prompt(prompt_file: Path) -> str:
@@ -122,21 +121,22 @@ def semantic_chunking(text_dict: dict, chunk_size: int = 1000, chunk_overlap: in
     chunks = text_splitter.split_text(all_text)
     return chunks
 
-def embed_and_upsert_to_pinecone(chunks: list[str], index):
+def embed_and_upsert_to_pinecone(chunks: list[str], index, pdf_filename: str):
     """
     Embeds the text chunks using HuggingFace embeddings and upserts them to Pinecone.
+    Uses the PDF filename to create unique IDs for the chunks.
     """
     embeddings = HuggingFaceEmbeddings(model_name=model_name, model_kwargs=model_kwargs)
 
     batch_size = 32
     for i in range(0, len(chunks), batch_size):
         batch_chunks = chunks[i:i + batch_size]
-        ids = [f"chunk-{i}-{j}" for j in range(len(batch_chunks))]
+        ids = [f"{pdf_filename}-chunk-{i}-{j}" for j in range(len(batch_chunks))]
         embeds = embeddings.embed_documents(batch_chunks)
         metadata = [{"text": text} for text in batch_chunks]
         to_upsert = list(zip(ids, embeds, metadata))
         index.upsert(vectors=to_upsert)
-    print(f"Upserted {len(chunks)} chunks to Pinecone.")
+    print(f"Upserted {len(chunks)} chunks from {pdf_filename} to Pinecone.")
 
 def generate_response(query: str, context: str, model_name: str = "meta-llama/Llama-3-8b-chat-hf"):
     """
@@ -190,21 +190,27 @@ class RAGChatbot:
         if not PINECONE_API_KEY:
             raise ValueError("Pinecone API key must be set.")
         self.pc = Pinecone(api_key=PINECONE_API_KEY)
-        self.pinecone_index_name = f"{PINECONE_BASE_INDEX_NAME}-{int(time.time())}"
-        print(f"Creating Pinecone index '{self.pinecone_index_name}'...")
+        # self.pinecone_index_name = f"{PINECONE_BASE_INDEX_NAME}-{int(time.time())}"
+        self.pinecone_index_name = "index-2"
+        print(f"Using Pinecone index '{self.pinecone_index_name}'...")
         try:
-            self.pc.create_index(
-                name=self.pinecone_index_name,
-                dimension=768,  # Dimension of all-mpnet-base-v2 embeddings
-                metric="cosine",
-                spec=ServerlessSpec(
-                    cloud="aws",
-                    region=PINECONE_ENVIRONMENT
+            # Check if the index exists before attempting to create it
+            if self.pinecone_index_name not in self.pc.list_indexes():
+                self.pc.create_index(
+                    name=self.pinecone_index_name,
+                    dimension=768,  # Dimension of all-mpnet-base-v2 embeddings
+                    metric="cosine",
+                    spec=ServerlessSpec(
+                        cloud="aws",
+                        region=PINECONE_ENVIRONMENT
+                    )
                 )
-            )
+                print(f"Pinecone index '{self.pinecone_index_name}' created.")
+            else:
+                print(f"Pinecone index '{self.pinecone_index_name}' already exists.")
             self.index = self.pc.Index(self.pinecone_index_name)
         except Exception as e:
-            raise Exception(f"Error creating Pinecone index: {e}")
+            raise Exception(f"Error accessing or creating Pinecone index: {e}")
 
     def ingest_pdfs(self, pdf_paths: list[Path]):
         """Ingests a list of PDFs, chunks them, and uploads to Pinecone."""
@@ -213,7 +219,8 @@ class RAGChatbot:
             extracted_text = extract_text_from_pdf(pdf_path)
             if extracted_text:
                 chunks = semantic_chunking(extracted_text)
-                embed_and_upsert_to_pinecone(chunks, self.index)
+                pdf_filename = os.path.splitext(os.path.basename(str(pdf_path)))[0]
+                embed_and_upsert_to_pinecone(chunks, self.index, pdf_filename)
             else:
                 print(f"No text extracted from the PDF: {pdf_path}")
 
@@ -226,12 +233,23 @@ class RAGChatbot:
         return response
     
 
+# pdf_files = [
+#     Path('../Selected_Docs/index 1/LAXMI DENTAL LIMITED -PRICE BAND AD.pdf'),
+#     Path('../Selected_Docs/index 1/Laxmi Dental Limited- RHP.pdf'),
+# ]
 pdf_files = [
-    Path('Concord Enviro Systems Limited_RHP.pdf'),
-    Path('DAM Capital Advisors Limited_RHP.pdf'),
-    Path('Ventive Hospitality Limited_RHP.pdf'),
-    Path('NewMalayalam Steel Limited_RHP.pdf'),
+    Path('../Selected_Docs/index 2/Annexure_A_Red_Herring_Prospectus.pdf'),
+    Path('../Selected_Docs/index 2/Annexure_I_Price_Band_Advertisement.pdf'),
 ]
+# pdf_files = [
+#     Path('../Selected_Docs/index 3/FE-Delhi 06-01.pdf'),
+#     Path('../Selected_Docs/index 3/RHP_Satkartar.pdf'),
+# ]
+# pdf_files = [
+#     Path('../Selected_Docs/index 4/Barflex_GID_Final.pdf'),
+#     Path('../Selected_Docs/index 4/FE-Mumbai 06-01.pdf'),
+#     Path('../Selected_Docs/index 4/RHP.pdf'),
+# ]
 
 chatbot = RAGChatbot()
 
